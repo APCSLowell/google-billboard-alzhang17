@@ -19,8 +19,8 @@ public class GoogleBillboard {
     
     counter++;
     numbers = Double.parseDouble(digits);
-    
-    if(isPrime(numbers) == true){
+    boolean primeFound = isPrime(numbers);
+    if(primeFound){
       notFound = false;
       System.out.println(numbers);
     }else{
