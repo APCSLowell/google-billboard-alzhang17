@@ -7,6 +7,7 @@ public class GoogleBillboard {
   double numbers = 0;
   boolean notFound = true;
   int counter = 0;
+  boolean x = false;
   
   while(notFound){
     for(int i = counter; i < counter + 10; i++){
@@ -19,8 +20,9 @@ public class GoogleBillboard {
     
     counter++;
     numbers = Double.parseDouble(digits);
-    boolean primeFound = isPrime(numbers);
-    if(primeFound){
+    GoogleBillboard prime = new GoogleBillboard();
+    x = prime.isPrime();
+    if(x){
       notFound = false;
       System.out.println(numbers);
     }else{
