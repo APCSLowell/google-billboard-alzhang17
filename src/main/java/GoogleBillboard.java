@@ -19,7 +19,9 @@ public class GoogleBillboard {
     
     counter++;
     numbers = Double.parseDouble(digits);
-    if(isPrime(numbers)){
+    GoogleBillboard x = new GoogleBillboard();
+    var prime = x.isPrime();
+    if(prime){
       notFound = false;
       System.out.println(numbers);
     }else{
