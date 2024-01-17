@@ -20,7 +20,7 @@ public class GoogleBillboard {
     counter++;
     numbers = Double.parseDouble(digits);
     GoogleBillboard x = new GoogleBillboard();
-    var prime = x.isPrime();
+    boolean prime = x.isPrime(numbers);
     if(prime){
       notFound = false;
       System.out.println(numbers);
